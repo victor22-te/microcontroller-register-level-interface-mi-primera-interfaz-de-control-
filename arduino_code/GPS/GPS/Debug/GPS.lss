@@ -1,0 +1,373 @@
+
+GPS.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000004  00800200  0000020c  000002a0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000020c  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000081  00800204  00800204  000002a4  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000002a4  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000002d4  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000050  00000000  00000000  00000314  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000df3  00000000  00000000  00000364  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000c79  00000000  00000000  00001157  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000003ac  00000000  00000000  00001dd0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000cc  00000000  00000000  0000217c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000005c0  00000000  00000000  00002248  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000137  00000000  00000000  00002808  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000040  00000000  00000000  0000293f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	71 c0       	rjmp	.+226    	; 0xe4 <__ctors_end>
+   2:	00 00       	nop
+   4:	8e c0       	rjmp	.+284    	; 0x122 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	8c c0       	rjmp	.+280    	; 0x122 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	8a c0       	rjmp	.+276    	; 0x122 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	88 c0       	rjmp	.+272    	; 0x122 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	86 c0       	rjmp	.+268    	; 0x122 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	84 c0       	rjmp	.+264    	; 0x122 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	82 c0       	rjmp	.+260    	; 0x122 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	80 c0       	rjmp	.+256    	; 0x122 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	7e c0       	rjmp	.+252    	; 0x122 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	7c c0       	rjmp	.+248    	; 0x122 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	7a c0       	rjmp	.+244    	; 0x122 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	78 c0       	rjmp	.+240    	; 0x122 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	76 c0       	rjmp	.+236    	; 0x122 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	74 c0       	rjmp	.+232    	; 0x122 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	72 c0       	rjmp	.+228    	; 0x122 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	70 c0       	rjmp	.+224    	; 0x122 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	6e c0       	rjmp	.+220    	; 0x122 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	6c c0       	rjmp	.+216    	; 0x122 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	6a c0       	rjmp	.+212    	; 0x122 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	68 c0       	rjmp	.+208    	; 0x122 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	66 c0       	rjmp	.+204    	; 0x122 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	64 c0       	rjmp	.+200    	; 0x122 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	62 c0       	rjmp	.+196    	; 0x122 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	60 c0       	rjmp	.+192    	; 0x122 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	5e c0       	rjmp	.+188    	; 0x122 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	5c c0       	rjmp	.+184    	; 0x122 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	5a c0       	rjmp	.+180    	; 0x122 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	58 c0       	rjmp	.+176    	; 0x122 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	56 c0       	rjmp	.+172    	; 0x122 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	54 c0       	rjmp	.+168    	; 0x122 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	52 c0       	rjmp	.+164    	; 0x122 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	50 c0       	rjmp	.+160    	; 0x122 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	4e c0       	rjmp	.+156    	; 0x122 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	4c c0       	rjmp	.+152    	; 0x122 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	4a c0       	rjmp	.+148    	; 0x122 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	48 c0       	rjmp	.+144    	; 0x122 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	46 c0       	rjmp	.+140    	; 0x122 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	44 c0       	rjmp	.+136    	; 0x122 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	42 c0       	rjmp	.+132    	; 0x122 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	40 c0       	rjmp	.+128    	; 0x122 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	3e c0       	rjmp	.+124    	; 0x122 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	3c c0       	rjmp	.+120    	; 0x122 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	3a c0       	rjmp	.+116    	; 0x122 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	38 c0       	rjmp	.+112    	; 0x122 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	36 c0       	rjmp	.+108    	; 0x122 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	34 c0       	rjmp	.+104    	; 0x122 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	32 c0       	rjmp	.+100    	; 0x122 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	30 c0       	rjmp	.+96     	; 0x122 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	2e c0       	rjmp	.+92     	; 0x122 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	2c c0       	rjmp	.+88     	; 0x122 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	2a c0       	rjmp	.+84     	; 0x122 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	28 c0       	rjmp	.+80     	; 0x122 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	26 c0       	rjmp	.+76     	; 0x122 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	51 c0       	rjmp	.+162    	; 0x17c <__vector_54>
+  da:	00 00       	nop
+  dc:	22 c0       	rjmp	.+68     	; 0x122 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	20 c0       	rjmp	.+64     	; 0x122 <__bad_interrupt>
+	...
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	ec e0       	ldi	r30, 0x0C	; 12
+  fc:	f2 e0       	ldi	r31, 0x02	; 2
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a4 30       	cpi	r26, 0x04	; 4
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+
+0000010e <__do_clear_bss>:
+ 10e:	22 e0       	ldi	r18, 0x02	; 2
+ 110:	a4 e0       	ldi	r26, 0x04	; 4
+ 112:	b2 e0       	ldi	r27, 0x02	; 2
+ 114:	01 c0       	rjmp	.+2      	; 0x118 <.do_clear_bss_start>
+
+00000116 <.do_clear_bss_loop>:
+ 116:	1d 92       	st	X+, r1
+
+00000118 <.do_clear_bss_start>:
+ 118:	a5 38       	cpi	r26, 0x85	; 133
+ 11a:	b2 07       	cpc	r27, r18
+ 11c:	e1 f7       	brne	.-8      	; 0x116 <.do_clear_bss_loop>
+ 11e:	70 d0       	rcall	.+224    	; 0x200 <main>
+ 120:	73 c0       	rjmp	.+230    	; 0x208 <_exit>
+
+00000122 <__bad_interrupt>:
+ 122:	6e cf       	rjmp	.-292    	; 0x0 <__vectors>
+
+00000124 <USART0_init>:
+
+void USART0_transmit(unsigned char data) {
+	// Wait for empty transmit buffer
+	while (!(UCSR0A & (1 << UDRE0)));
+	// Put data into buffer, sends the data
+	UDR0 = data;
+ 124:	87 e6       	ldi	r24, 0x67	; 103
+ 126:	90 e0       	ldi	r25, 0x00	; 0
+ 128:	90 93 c5 00 	sts	0x00C5, r25	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7c00c5>
+ 12c:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7c00c4>
+ 130:	88 e9       	ldi	r24, 0x98	; 152
+ 132:	80 93 c1 00 	sts	0x00C1, r24	; 0x8000c1 <__TEXT_REGION_LENGTH__+0x7c00c1>
+ 136:	86 e0       	ldi	r24, 0x06	; 6
+ 138:	80 93 c2 00 	sts	0x00C2, r24	; 0x8000c2 <__TEXT_REGION_LENGTH__+0x7c00c2>
+ 13c:	08 95       	ret
+
+0000013e <USART3_init>:
+ 13e:	87 e6       	ldi	r24, 0x67	; 103
+ 140:	90 e0       	ldi	r25, 0x00	; 0
+ 142:	90 93 35 01 	sts	0x0135, r25	; 0x800135 <__TEXT_REGION_LENGTH__+0x7c0135>
+ 146:	80 93 34 01 	sts	0x0134, r24	; 0x800134 <__TEXT_REGION_LENGTH__+0x7c0134>
+ 14a:	88 e9       	ldi	r24, 0x98	; 152
+ 14c:	80 93 31 01 	sts	0x0131, r24	; 0x800131 <__TEXT_REGION_LENGTH__+0x7c0131>
+ 150:	86 e0       	ldi	r24, 0x06	; 6
+ 152:	80 93 32 01 	sts	0x0132, r24	; 0x800132 <__TEXT_REGION_LENGTH__+0x7c0132>
+ 156:	08 95       	ret
+
+00000158 <USART0_print>:
+}
+
+void USART0_print(const char* str) {
+ 158:	fc 01       	movw	r30, r24
+	while (*str) {
+ 15a:	07 c0       	rjmp	.+14     	; 0x16a <USART0_print+0x12>
+		while (!(UCSR0A & (1 << UDRE0))); // Wait for empty transmit buffer
+ 15c:	90 91 c0 00 	lds	r25, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7c00c0>
+ 160:	95 ff       	sbrs	r25, 5
+ 162:	fc cf       	rjmp	.-8      	; 0x15c <USART0_print+0x4>
+		UDR0 = *str++; // Put data into buffer, sends the data
+ 164:	31 96       	adiw	r30, 0x01	; 1
+ 166:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7c00c6>
+	// Put data into buffer, sends the data
+	UDR0 = data;
+}
+
+void USART0_print(const char* str) {
+	while (*str) {
+ 16a:	80 81       	ld	r24, Z
+ 16c:	81 11       	cpse	r24, r1
+ 16e:	f6 cf       	rjmp	.-20     	; 0x15c <USART0_print+0x4>
+		while (!(UCSR0A & (1 << UDRE0))); // Wait for empty transmit buffer
+		UDR0 = *str++; // Put data into buffer, sends the data
+	}
+}
+ 170:	08 95       	ret
+
+00000172 <process_gps_data>:
+
+void process_gps_data(char* buffer) {
+	// Simply print the whole buffer
+	USART0_print(buffer);
+ 172:	f2 df       	rcall	.-28     	; 0x158 <USART0_print>
+	USART0_print("\r\n");
+ 174:	80 e0       	ldi	r24, 0x00	; 0
+ 176:	92 e0       	ldi	r25, 0x02	; 2
+ 178:	ef cf       	rjmp	.-34     	; 0x158 <USART0_print>
+ 17a:	08 95       	ret
+
+0000017c <__vector_54>:
+	UCSR3B = (1 << RXEN3) | (1 << TXEN3) | (1 << RXCIE3); // Enable RX complete interrupt
+	// Set frame format: 8 data bits, 1 stop bit
+	UCSR3C = (1 << UCSZ31) | (1 << UCSZ30);
+}
+
+ISR(USART3_RX_vect) {
+ 17c:	1f 92       	push	r1
+ 17e:	0f 92       	push	r0
+ 180:	0f b6       	in	r0, 0x3f	; 63
+ 182:	0f 92       	push	r0
+ 184:	11 24       	eor	r1, r1
+ 186:	0b b6       	in	r0, 0x3b	; 59
+ 188:	0f 92       	push	r0
+ 18a:	2f 93       	push	r18
+ 18c:	3f 93       	push	r19
+ 18e:	4f 93       	push	r20
+ 190:	5f 93       	push	r21
+ 192:	6f 93       	push	r22
+ 194:	7f 93       	push	r23
+ 196:	8f 93       	push	r24
+ 198:	9f 93       	push	r25
+ 19a:	af 93       	push	r26
+ 19c:	bf 93       	push	r27
+ 19e:	ef 93       	push	r30
+ 1a0:	ff 93       	push	r31
+	static char buffer[128];
+	static uint8_t buffer_index = 0;
+	unsigned char data = UDR3;
+ 1a2:	80 91 36 01 	lds	r24, 0x0136	; 0x800136 <__TEXT_REGION_LENGTH__+0x7c0136>
+
+	if (data == '\n' || buffer_index >= 127) {
+ 1a6:	8a 30       	cpi	r24, 0x0A	; 10
+ 1a8:	21 f0       	breq	.+8      	; 0x1b2 <__vector_54+0x36>
+ 1aa:	e0 91 84 02 	lds	r30, 0x0284	; 0x800284 <buffer_index.2233>
+ 1ae:	ef 37       	cpi	r30, 0x7F	; 127
+ 1b0:	60 f0       	brcs	.+24     	; 0x1ca <__vector_54+0x4e>
+		buffer[buffer_index] = '\0'; // Terminate buffer with null character
+ 1b2:	e0 91 84 02 	lds	r30, 0x0284	; 0x800284 <buffer_index.2233>
+ 1b6:	f0 e0       	ldi	r31, 0x00	; 0
+ 1b8:	ec 5f       	subi	r30, 0xFC	; 252
+ 1ba:	fd 4f       	sbci	r31, 0xFD	; 253
+ 1bc:	10 82       	st	Z, r1
+		process_gps_data(buffer);
+ 1be:	84 e0       	ldi	r24, 0x04	; 4
+ 1c0:	92 e0       	ldi	r25, 0x02	; 2
+ 1c2:	d7 df       	rcall	.-82     	; 0x172 <process_gps_data>
+		buffer_index = 0; // Reset buffer index for next message
+ 1c4:	10 92 84 02 	sts	0x0284, r1	; 0x800284 <buffer_index.2233>
+ISR(USART3_RX_vect) {
+	static char buffer[128];
+	static uint8_t buffer_index = 0;
+	unsigned char data = UDR3;
+
+	if (data == '\n' || buffer_index >= 127) {
+ 1c8:	08 c0       	rjmp	.+16     	; 0x1da <__vector_54+0x5e>
+		buffer[buffer_index] = '\0'; // Terminate buffer with null character
+		process_gps_data(buffer);
+		buffer_index = 0; // Reset buffer index for next message
+		} else {
+		buffer[buffer_index++] = data;
+ 1ca:	91 e0       	ldi	r25, 0x01	; 1
+ 1cc:	9e 0f       	add	r25, r30
+ 1ce:	90 93 84 02 	sts	0x0284, r25	; 0x800284 <buffer_index.2233>
+ 1d2:	f0 e0       	ldi	r31, 0x00	; 0
+ 1d4:	ec 5f       	subi	r30, 0xFC	; 252
+ 1d6:	fd 4f       	sbci	r31, 0xFD	; 253
+ 1d8:	80 83       	st	Z, r24
+	}
+}
+ 1da:	ff 91       	pop	r31
+ 1dc:	ef 91       	pop	r30
+ 1de:	bf 91       	pop	r27
+ 1e0:	af 91       	pop	r26
+ 1e2:	9f 91       	pop	r25
+ 1e4:	8f 91       	pop	r24
+ 1e6:	7f 91       	pop	r23
+ 1e8:	6f 91       	pop	r22
+ 1ea:	5f 91       	pop	r21
+ 1ec:	4f 91       	pop	r20
+ 1ee:	3f 91       	pop	r19
+ 1f0:	2f 91       	pop	r18
+ 1f2:	0f 90       	pop	r0
+ 1f4:	0b be       	out	0x3b, r0	; 59
+ 1f6:	0f 90       	pop	r0
+ 1f8:	0f be       	out	0x3f, r0	; 63
+ 1fa:	0f 90       	pop	r0
+ 1fc:	1f 90       	pop	r1
+ 1fe:	18 95       	reti
+
+00000200 <main>:
+	USART0_print(buffer);
+	USART0_print("\r\n");
+}
+
+int main(void) {
+	USART3_init();
+ 200:	9e df       	rcall	.-196    	; 0x13e <USART3_init>
+	USART0_init();
+ 202:	90 df       	rcall	.-224    	; 0x124 <USART0_init>
+ 204:	78 94       	sei
+	
+	sei(); // Enable global interrupts
+ 206:	ff cf       	rjmp	.-2      	; 0x206 <main+0x6>
+
+00000208 <_exit>:
+ 208:	f8 94       	cli
+
+0000020a <__stop_program>:
+ 20a:	ff cf       	rjmp	.-2      	; 0x20a <__stop_program>
