@@ -153,15 +153,32 @@ La interfaz principal muestra 12 botones para acceder a cada módulo de sensor/a
 
 ```
 ProyectoSensoresPractFinal/
-├── ProyectoSensoresPractFinal.py  # Interfaz principal
+├── ProyectoSensoresPractFinal.py  # Interfaz principal Python
 ├── requirements.txt                # Dependencias Python
 ├── ejecutar_interfaz.bat          # Script de ejecución rápida
+├── inicializar_git.bat            # Script para inicializar Git
 ├── README.md                       # Este archivo
 ├── README_ENTORNO_VIRTUAL.md      # Guía del entorno virtual
+├── GUIA_GITHUB.md                 # Guía para subir a GitHub
+├── LICENSE                         # Licencia MIT
 ├── .gitignore                      # Archivos ignorados por Git
 ├── icono.ico                       # Icono de la aplicación
 ├── termome.png                     # Imagen de la interfaz
-└── venv/                           # Entorno virtual (no en Git)
+├── venv/                           # Entorno virtual (no en Git)
+└── arduino_code/                   # ⭐ Código Arduino (nivel de registros)
+    ├── README.md                   # Documentación del código Arduino
+    ├── lm35/                       # Sensor de temperatura LM35
+    ├── max6575/                    # Sensor de temperatura MAX6575
+    ├── mxl90614/                   # Sensor de temperatura infrarrojo
+    ├── HC-SR04/                    # Sensor ultrasónico de distancia
+    ├── BH_1750/                    # Sensor de intensidad de luz
+    ├── TCS/                        # Sensor de color TCS3200
+    ├── MPU6050/                    # Acelerómetro y giroscopio
+    ├── GPS/                        # Módulo GPS
+    ├── MOTORES/                    # Control de motor DC
+    ├── MAX7219/                    # Matriz de LEDs 8x8
+    ├── MCP/                        # Convertidor DAC
+    └── Data Sheets/                # Hojas de datos de sensores
 ```
 
 ## 🛠️ Desarrollo

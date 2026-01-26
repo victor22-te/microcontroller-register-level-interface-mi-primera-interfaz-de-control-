@@ -49,3 +49,28 @@ desktop.ini
 *.tmp
 *.bak
 *~
+
+# Atmel Studio / AVR
+Debug/
+Release/
+*.atsln
+*.atsuo
+*.cproj
+*.componentinfo.xml
+*.elf
+*.eep
+*.hex
+*.lss
+*.map
+*.o
+*.d
+*.srec
+
+# Arduino
+*.ino.hex
+*.ino.eep
+*.ino.elf
+
+# Zip files (ya tenemos los archivos descomprimidos)
+*.zip
+
