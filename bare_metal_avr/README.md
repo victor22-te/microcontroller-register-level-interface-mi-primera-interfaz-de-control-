@@ -1,6 +1,6 @@
-# Código Arduino - Programación a Nivel de Registros
+# Bare-Metal AVR - Programación a Nivel de Registros
 
-Esta carpeta contiene el código fuente de todos los sensores y actuadores programados a **nivel de registros** (bare-metal) para el microcontrolador **ATmega328P** (Arduino UNO).
+Esta carpeta contiene el código fuente de todos los sensores y actuadores programados a **nivel de registros** (bare-metal) para el microcontrolador **ATmega328P** (Arduino UNO), sin usar librerías de alto nivel.
 
 ## 📁 Estructura de Carpetas
 

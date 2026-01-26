@@ -165,8 +165,8 @@ ProyectoSensoresPractFinal/
 ├── icono.ico                       # Icono de la aplicación
 ├── termome.png                     # Imagen de la interfaz
 ├── venv/                           # Entorno virtual (no en Git)
-└── arduino_code/                   # ⭐ Código Arduino (nivel de registros)
-    ├── README.md                   # Documentación del código Arduino
+└── bare_metal_avr/                 # ⭐ Código AVR a nivel de registros
+    ├── README.md                   # Documentación del código bare-metal
     ├── lm35/                       # Sensor de temperatura LM35
     ├── max6575/                    # Sensor de temperatura MAX6575
     ├── mxl90614/                   # Sensor de temperatura infrarrojo
