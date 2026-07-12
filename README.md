@@ -1,6 +1,5 @@
 # Register-Level Arduino Sensor Dashboard
-
-🔧 **Dashboard de sensores Arduino con programación a nivel de registros (bare-metal AVR)**
+ **Dashboard de sensores Arduino con programación a nivel de registros (bare-metal AVR)**
 
 Interfaz gráfica Python/Tkinter para monitoreo y control de múltiples sensores y actuadores conectados a Arduino, programado completamente a nivel de registros sin usar librerías de alto nivel.
 
@@ -8,7 +7,7 @@ Interfaz gráfica Python/Tkinter para monitoreo y control de múltiples sensores
 ![Arduino](https://img.shields.io/badge/Arduino-AVR-00979D.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## 📋 Características
+## Características
 
 ### Sensores Soportados
 
@@ -27,7 +26,7 @@ Interfaz gráfica Python/Tkinter para monitoreo y control de múltiples sensores
 | **Matriz LED** | Display de mensajes | GPIO |
 | **DAC** | Convertidor Digital-Analógico | SPI/I2C |
 
-## 🔧 Programación a Nivel de Registros (Bare-Metal)
+## Programación a Nivel de Registros (Bare-Metal)
 
 Este proyecto **NO utiliza las librerías estándar de Arduino IDE**. Todo el código del microcontrolador está programado directamente manipulando los registros del AVR ATmega328P:
 
@@ -45,7 +44,7 @@ Este proyecto **NO utiliza las librerías estándar de Arduino IDE**. Todo el c�
 ✅ Optimización de recursos  
 ✅ Comprensión profunda del microcontrolador
 
-## 🚀 Instalación
+## Instalación
 
 ### Requisitos
 
@@ -88,12 +87,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 📦 Dependencias
+## Dependencias
 
 - **pyserial**: Comunicación serial con Arduino
 - **tkinter**: Interfaz gráfica (incluido con Python)
 
-## 🎮 Uso
+## Uso
 
 ### Opción 1: Script de ejecución rápida (Windows)
 ```bash
@@ -119,7 +118,7 @@ Por defecto, la interfaz usa el puerto **COM4** a **9600 baudios**. Si tu Arduin
 arduino = serial.Serial('COM4', 9600)  # Cambiar COM4 por tu puerto
 ```
 
-## 🖼️ Capturas de Pantalla
+## Capturas de Pantalla
 
 ### Menú Principal
 La interfaz principal muestra 12 botones para acceder a cada módulo de sensor/actuador.
@@ -138,7 +137,7 @@ La interfaz principal muestra 12 botones para acceder a cada módulo de sensor/a
 - Temperatura MLX
 - Acelerómetro y Giroscopio (MPU6050)
 
-## 🔌 Conexiones Hardware
+## Conexiones Hardware
 
 ### Pines Arduino (ATmega328P)
 
@@ -149,7 +148,7 @@ La interfaz principal muestra 12 botones para acceder a cada módulo de sensor/a
 | PWM Motor | D3, D5, D6 | Timer0/1 (OCRx) |
 | I2C (SDA/SCL) | A4/A5 | TWI (TWDR) |
 
-## 📚 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 ProyectoSensoresPractFinal/
@@ -165,7 +164,7 @@ ProyectoSensoresPractFinal/
 ├── icono.ico                       # Icono de la aplicación
 ├── termome.png                     # Imagen de la interfaz
 ├── venv/                           # Entorno virtual (no en Git)
-└── bare_metal_avr/                 # ⭐ Código AVR a nivel de registros
+└── bare_metal_avr/                 # Código AVR a nivel de registros
     ├── README.md                   # Documentación del código bare-metal
     ├── lm35/                       # Sensor de temperatura LM35
     ├── max6575/                    # Sensor de temperatura MAX6575
@@ -201,10 +200,10 @@ btn_nuevo = Button(elframe, text="NUEVO SENSOR",
 btn_nuevo.place(x=25, y=450)
 ```
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### Error: "bitmap 'icono.ico' not defined"
-✅ **Solucionado**: El código usa rutas absolutas automáticamente.
+**Solucionado**: El código usa rutas absolutas automáticamente.
 
 ### Error: "Serial port not found"
 - Verifica que el Arduino esté conectado
@@ -217,7 +216,7 @@ Ejecuta como Administrador:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-## 📖 Contexto Académico
+## Contexto Académico
 
 Este proyecto fue desarrollado como práctica final para el curso de **Microcontroladores, Microprocesadores e Interfaz**, con énfasis en:
 
@@ -229,15 +228,15 @@ Este proyecto fue desarrollado como práctica final para el curso de **Microcont
 - Protocolo I2C/TWI
 - Interfaz gráfica de usuario
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
-## 👨‍💻 Autor
+## Autor
 
 Proyecto desarrollado para la clase de Microcontroladores, Microprocesadores e Interfaz.
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor:
 
@@ -247,10 +246,10 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/NuevaCaracteristica`)
 5. Abre un Pull Request
 
-## 📞 Soporte
+## Soporte
 
 Si tienes problemas o preguntas, abre un **Issue** en GitHub.
 
 ---
 
-⭐ Si este proyecto te fue útil, considera darle una estrella en GitHub!
+⭐ Si este proyecto te fue útil, considera darle una estrella en GitHub! 🕷️
